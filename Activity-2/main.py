@@ -1,4 +1,4 @@
-class Librery:
+class Library:
     def __init__(self,list,name):
         self.bookList = list
         self.name = name
@@ -35,11 +35,11 @@ if __name__ == '__main__':
         if user_choice == 1:
             books.DisplayBooks()
         elif user_choice == 2:
-             book = input("Enter the name of the book you want to lend: ")
+            book = input("Enter the name of the book you want to lend: ")
             user = input("Enter your name")
             books.lendBook(user,book)
         elif user_choice == 3:
-             book = input("Enter the name of the book you want to add: ")
+            book = input("Enter the name of the book you want to add: ")
             books.addBook(book)
         elif user_choice == 4:
             book = input("Enter the name of the book you want to return: ")
@@ -52,5 +52,5 @@ if __name__ == '__main__':
             user_choice2 = input()
             if user_choice2 == "q":
                 exit()
-             elif user_choice2 == "c":
+            elif user_choice2 == "c":
                 continue
